@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<groups>
+			<run>
+				<exclude name = "smoke","system"></exclude>
+			</run>
+		</groups>
+		<classes>
+			<class name="Automation.Test_Script.AlertHandling" />
+			<class name="Automation.Test_Script.Demo" />
+			<class name="Automation.Test_Script.Acti_Time_Drag_Drop" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
